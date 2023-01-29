@@ -1,1 +1,3 @@
 # File-ingestion_schema-validation
+
+This is a simple project used to make file ingestion and schema validation for large csv files(>2GB). I used ray datframe to read this large csv file since I found it as the most efficent way to read such large files efficiently. I then converted ray dataframe to pandas using some inbuilt function to perform schema validation and some adjustments to original datframe. I splitted this large csv into 2220 chunks(40k records each) to reduce overload on CPU memmory usage. In this project I tested my work using just the first csvchunk chunk0 to make thingss simpler and easier to understand. 
